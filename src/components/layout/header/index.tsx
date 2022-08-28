@@ -1,5 +1,5 @@
 import { AntdLayout, Dropdown, Icons, Menu, MenuProps, Space } from "@pankod/refine-antd";
-import { HeaderProps } from "../../../interfaces";
+import { HeaderProps } from "interfaces";
 
 enum MenuOpts {
   "superuser" = "Administrator",

@@ -2,7 +2,7 @@ import { IResourceComponentsProps } from "@pankod/refine-core";
 
 import { useForm, Create, Form, Input, Select, useSelect } from "@pankod/refine-antd";
 
-import { IPost } from "../../interfaces";
+import { IPost } from "interfaces";
 
 export const PostCreate: React.FC<IResourceComponentsProps> = () => {
   const { formProps, saveButtonProps } = useForm<IPost>();

@@ -2,7 +2,7 @@ import { useShow, useOne, IResourceComponentsProps } from "@pankod/refine-core";
 
 import { Show, Typography, Tag } from "@pankod/refine-antd";
 
-import { IPost, ICategory } from "../../interfaces";
+import { IPost, ICategory } from "interfaces";
 
 const { Title, Text } = Typography;
 
