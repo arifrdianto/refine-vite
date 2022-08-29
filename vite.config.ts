@@ -5,12 +5,11 @@ import { NodeGlobalsPolyfillPlugin } from "@esbuild-plugins/node-globals-polyfil
 import tsconfigPaths from "vite-tsconfig-paths";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ command, mode }) => {
+export default defineConfig(({ mode }) => {
   // Load env file based on `mode` in the current working directory.
   // Set the third parameter to '' to load all env regardless of the `VITE_` prefix.
   const env = loadEnv(mode, process.cwd(), "");
   return {
-    // vite config
     define: {
       "process.env": env.APP_ENV,
     },
@@ -24,7 +23,6 @@ export default defineConfig(({ command, mode }) => {
     },
     resolve: {
       alias: {
-        // process: "process/browser",
         util: "rollup-plugin-node-polyfills/polyfills/util",
         sys: "util",
         events: "rollup-plugin-node-polyfills/polyfills/events",
